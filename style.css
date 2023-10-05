@@ -1,0 +1,128 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+  background-color: #000123;
+  font-family: 'Croissant One', cursive;
+font-family: 'Noto Serif', serif;
+font-family: 'Salsa', cursive;
+font-family: 'VT323', monospace;
+}
+
+.landing{
+    height: 100vh;
+    width: 100%;
+    background-color: blue;
+    background-image: url(1.jpg);
+    background-size: cover;
+    background-position: center;
+
+   
+}
+.text{
+  color: #fff;
+  margin-left: 20%;
+  margin-top: 70px;
+}
+h2{
+  font-size: 50px;
+}
+p{
+  letter-spacing: 2px;
+  font-size: 30px;
+  margin: 0;
+}
+.btn{
+    padding: 4px 10px;
+    margin: 5px 10px;
+    background-color: #FF0F7B;
+    color: #fff;
+    justify-content: center;
+
+}
+.lds-circle {
+    display: flex;
+    transform: translateZ(1px);
+  }
+  .lds-circle > div {
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    margin: 8px;
+    border-radius: 50%;
+    background: #fff;
+    animation: lds-circle 2.4s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+  }
+  @keyframes lds-circle {
+    0%, 100% {
+      animation-timing-function: cubic-bezier(0.5, 0, 1, 0.5);
+    }
+    0% {
+      transform: rotateY(0deg);
+    }
+    50% {
+      transform: rotateY(1800deg);
+      animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
+    }
+    100% {
+      transform: rotateY(3600deg);
+    }
+  }
+  .flexbtn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+ 
+.real{
+    background-image: url(3.jpg);
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+ /* X-Small devices (portrait phones, less than 576px)
+ No media query for `xs` since this is the default in Bootstrap */
+
+ /* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+    .contaner{
+        width: 576px;
+    }
+ }
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    .contaner{
+        width: 768px;
+
+    }
+ }
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .contaner{
+        width: 992px;
+
+    }
+ }
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    .contaner{
+        width: 1200px ;
+
+    }
+ }
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { 
+    .contaner{
+        width: 1400px ;
+
+    }
+ }
